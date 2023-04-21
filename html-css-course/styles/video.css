@@ -70,13 +70,39 @@
 }
 
 .channel-picture-tooltip {
-  background-color: black;
+  background-color: rgb(248,248,248);
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
   display: flex;
   position: absolute;
-  bottom: 100;
-  width: 200px;
+  bottom: -50px;
+  left: 10px;
+  height: 70px;
+  width: 220px;
+  opacity: 1;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  align-items: center;
+}
+
+.tooltip-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-picture-container:hover .channel-picture-tooltip {
+  opacity: 1;
+}
+
+.tooltip-profile-picture-container {
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tooltip-profile-picture {
-  width: 45px;
+  width: 50px;
+  border-radius: 100%;
 }
