@@ -97,6 +97,7 @@
   transition: opacity 0.15s;
   pointer-events: none;
   align-items: center;
+  z-index: 1000;
 }
 
 .tooltip-info-container {
